@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RifaJá – Sua próxima oportunidade começa aqui.</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;700;800&display=swap">
+<style>
+:root{--navy:#0A1B4D;--blue:#1E5BFF;--bg:#F4F6FD;--card:#fff;--ink:#0A1B4D;--mute:#56648C;--line:#DDE3F2;--ok:#0F8A4F;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070F29;--card:#0E1B45;--ink:#EAF0FF;--mute:#9DAAD0;--line:#223268;--ok:#4FD189}}
+:root[data-theme="dark"]{--bg:#070F29;--card:#0E1B45;--ink:#EAF0FF;--mute:#9DAAD0;--line:#223268;--ok:#4FD189}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 Figtree,system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:70}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}.wrap{width:min(1100px,100% - 32px);margin:auto}.pad{padding:28px 0 8px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+button,.btn{font:800 15px Figtree,sans-serif;border:0;border-radius:12px;padding:12px 18px;cursor:pointer;text-decoration:none;display:inline-block;text-align:center;transition:transform .15s,filter .15s}
+button:active{transform:scale(.97)}button:disabled{opacity:.45;cursor:not-allowed}
+.pri{background:linear-gradient(90deg,#1E5BFF,#4F8BFF);color:#fff;box-shadow:0 8px 22px #1E5BFF55}.pri:hover{filter:brightness(1.1)}.big{width:100%;padding:16px;font-size:17px}
+.gh{background:transparent;color:#fff;border:1.5px solid #ffffff66}.gh2{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.lnk{background:none;color:var(--mute);text-decoration:underline;padding:6px;font-weight:700}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:#0A1B4Dee;backdrop-filter:blur(10px);color:#fff}
+.bar0{display:flex;align-items:center;gap:10px;height:64px}.sp{flex:1}
+.logo{display:flex;align-items:center;gap:8px;font:800 24px "Bricolage Grotesque",sans-serif;text-decoration:none;color:#fff}.logo b{color:#6E98FF}
+.ico{background:transparent;color:#fff;width:44px;height:44px;padding:0;display:grid;place-items:center}.ico i{display:block;width:22px;height:2px;background:#fff;box-shadow:0 7px #fff,0 -7px #fff}
+#veil{position:fixed;inset:0;background:#040a22aa;opacity:0;pointer-events:none;transition:opacity .25s;z-index:80}
+#drawer{position:fixed;top:0;left:0;bottom:0;width:min(320px,86vw);background:var(--navy);color:#fff;z-index:90;transform:translateX(-100%);transition:transform .28s;padding:calc(20px + env(safe-area-inset-top,0px)) 20px 20px;visibility:hidden}
+body.open #drawer{transform:none;visibility:visible}body.open #veil{opacity:1;pointer-events:auto}
+#drawer a{display:block;padding:13px 10px;border-radius:10px;text-decoration:none;font-weight:600}#drawer a:hover{background:#13286B}
+.hero{background:radial-gradient(60% 90% at 85% 0,#2D6BFF66,transparent),radial-gradient(50% 70% at 0 100%,#7C5CFF55,transparent),var(--navy);color:#fff;padding:60px 0 84px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(38px,7vw,68px);font-weight:800;letter-spacing:-.02em;max-width:14ch}.hero p{color:#C3D1FF;font-size:19px;max-width:44ch;margin:16px 0 0}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.tk{position:absolute;right:-30px;top:40px;width:300px;opacity:.16;transform:rotate(-12deg)}@media(max-width:700px){.tk{width:200px;top:20px}}
+section.s{padding:48px 0 0}section.s h2{font-size:clamp(28px,5vw,40px);margin-bottom:6px}.lead{color:var(--mute);margin:0 0 22px;max-width:60ch}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;overflow:hidden;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}.card:hover{transform:translateY(-5px);box-shadow:0 16px 36px #0A1B4D2a}
+.cimg{width:100%;height:170px;object-fit:cover;display:grid;place-items:center;background:linear-gradient(135deg,#13286B,#1E5BFF);color:#fff;font:800 44px "Bricolage Grotesque",sans-serif}
+.cb{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}.cb h3{font-size:21px}.mu{color:var(--mute);margin:0}.s{font-size:13px}
+.tag{align-self:flex-start;font-size:12px;font-weight:800;padding:3px 10px;border-radius:99px;background:#1E5BFF22;color:var(--blue)}
+.bar{height:8px;border-radius:9px;background:var(--line);overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#1E5BFF,#7C5CFF);border-radius:9px;transition:width .6s}.bar.big{height:10px}
+.empty{border:2px dashed var(--line);border-radius:18px;padding:26px;color:var(--mute);grid-column:1/-1;margin:0}
+@keyframes up{from{opacity:0;transform:translateY(16px)}}.rv{animation:up .55s both}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.st{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px}.st b{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#1E5BFF,#7C5CFF);color:#fff;font:800 18px "Bricolage Grotesque",sans-serif;margin-bottom:10px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}summary{font-weight:800;cursor:pointer}details p{color:var(--mute);margin:8px 0 0}
+footer{background:var(--navy);color:#C3D1FF;margin-top:56px;padding:34px 0;font-size:14px}
+/* ganhadores */
+.gw{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.win{background:var(--card);border:1px solid var(--line);border-radius:26px;overflow:hidden;position:relative;transition:transform .25s,box-shadow .25s}.win:hover{transform:translateY(-5px);box-shadow:0 18px 40px #7C5CFF33}
+.wtop{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:linear-gradient(120deg,#F59E0B,#F97316 55%,#EF4444);color:#fff}.trophy{font-size:28px}.wnum{font:800 20px "Bricolage Grotesque",sans-serif;background:#0003;border-radius:99px;padding:4px 14px}
+.wimg{width:100%;height:150px;object-fit:cover}.wb{padding:16px;display:grid;gap:6px}.wb small{color:var(--mute);font-weight:700}.wb h3{font-size:22px}.wn{margin:6px 0 0;background:var(--bg);border-radius:14px;padding:10px 12px}.wn b{display:block;font-size:20px}
+/* rifa */
+.back{font-weight:800;color:var(--blue);text-decoration:none}.rhero{position:relative;border-radius:28px;overflow:hidden;margin-top:12px;background:var(--navy);color:#fff}.rimg{width:100%;height:260px;object-fit:cover;opacity:.75;display:grid;place-items:center;background:linear-gradient(135deg,#13286B,#1E5BFF);font:800 70px "Bricolage Grotesque",sans-serif}
+.rov{position:absolute;inset:auto 0 0 0;padding:70px 22px 20px;background:linear-gradient(transparent,#0A1B4D)}.rov h1{font-size:clamp(28px,5vw,44px);margin-top:8px}.rov p{margin:2px 0 0;color:#dbe5ff;font-size:18px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}.stats div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px;text-align:center}.stats small{display:block;color:var(--mute)}.stats b{font-size:19px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:20px;margin:14px 0}.panel h2{font-size:26px}.ph2{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+.warn{background:#FFF1D6;color:#7A4A00;border-radius:12px;padding:10px 12px;font-size:14px}.leg{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;font-size:12px;font-weight:800}.leg span{border-radius:9px;padding:4px 10px;border:2px solid var(--line)}
+.srch{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.srch input,.panel input[type=text],.cprow input{font:600 16px Figtree,sans-serif;padding:12px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);min-width:0}.srch input{width:130px}
+.ng{display:grid;grid-template-columns:repeat(auto-fill,minmax(54px,1fr));gap:7px}
+.nb{height:48px;border-radius:12px;border:2px solid var(--line);background:var(--card);color:var(--ink);font:800 14px Figtree,sans-serif;padding:0}.nb:hover:not(:disabled){border-color:var(--blue)}.nb.sel{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 0 14px #1E5BFF88;transform:scale(1.07)}
+.nb.pago{background:#CBD5E1;border-color:#CBD5E1;color:#64748B;text-decoration:line-through;opacity:1}.nb.reservado{background:#FEF3C7;border-color:#FCD34D;color:#B45309;opacity:1}
+.pagr{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;min-height:40px}.chip{background:#1E5BFF1a;color:var(--blue);border-radius:99px;padding:6px 14px}
+.lb{display:block;font-weight:800;color:var(--mute);margin:14px 0 4px;font-size:14px}.cprow{display:flex;gap:8px}.cprow input{flex:1;text-transform:uppercase}
+.sum{background:var(--bg);border-radius:18px;padding:14px;margin:14px 0;display:grid;gap:8px}.sum div{display:flex;justify-content:space-between}.sum .dc{color:var(--ok)}.sum .tt{border-top:1px solid var(--line);padding-top:8px;align-items:flex-end}.sum .tt b{font-size:32px}
+#cpM{font-weight:800;margin:8px 0 0}.live{color:var(--ok);font-weight:800}
+.ok{text-align:center;padding:10px}.ok svg{width:64px;height:64px}.qr{width:170px;height:170px;margin:12px auto;border-radius:16px;background:repeating-conic-gradient(#0A1B4D 0 25%,#fff 0 50%) 0 0/24px 24px;display:grid;place-items:center}
+.demo{background:#FFF1D6;color:#5C3800;border-radius:14px;padding:12px;font-size:14px;margin:12px 0;display:grid;gap:8px}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:#0A1B4D;color:#fff;padding:12px 18px;border-radius:12px;opacity:0;transition:.25s;z-index:200;max-width:90vw;border:1px solid #6E98FF;pointer-events:none}#toast.on{opacity:1;transform:translate(-50%,0)}
+/* painel do dono */
+.a2{display:flex;gap:16px;padding:18px;min-height:100vh;background:radial-gradient(ellipse at top left,#2433b866,transparent 55%),radial-gradient(ellipse at bottom right,#6d28d944,transparent 50%),#050B24;color:#E6ECFF}
+.a2s{width:220px;flex:none;background:#0B1440cc;border:1px solid #7F8FFF33;border-radius:22px;padding:14px;align-self:flex-start;position:sticky;top:76px;display:grid;gap:4px}
+@media(max-width:900px){.a2{flex-direction:column}.a2s{width:auto;position:static;display:flex;overflow-x:auto}.a2s>*{flex:none}}
+.a2l{display:block;font:800 24px "Bricolage Grotesque",sans-serif;margin:4px 6px 10px}.a2l span{color:#6E98FF}
+.a2i{display:block;text-align:left;background:transparent;color:#C3D1FF;padding:11px 12px;border-radius:12px;font-size:14px;font-weight:700;text-decoration:none}.a2i.on{background:linear-gradient(90deg,#4F46E5,#2D6BFF);color:#fff;box-shadow:0 0 16px #4F46E577}
+.a2m{flex:1;min-width:0}.a2m h2{margin:6px 0 14px;font-size:26px}.a2tag{font:700 12px Figtree,sans-serif;background:#4F46E533;border:1px solid #7C5CFF;border-radius:99px;padding:2px 10px;vertical-align:middle}
+.a2n0{background:#FFF1D6;color:#5C3800;border-radius:12px;padding:10px 12px;font-size:14px;margin:0}
+.a2k{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-bottom:14px}.a2kc{background:#0F1A55b0;border:1px solid #7F8FFF33;border-radius:18px;padding:14px}.a2kc span{display:block;font-size:12px;color:#9FB0E8}.a2kc b{font-size:24px;display:block}.a2kc small{color:#8FB0FF}
+.a2c{background:#0F1A55b0;border:1px solid #7F8FFF33;border-radius:22px;padding:16px;margin-bottom:14px;color:#E6ECFF}.a2c h3{margin:0 0 10px;font-size:20px}.a2g3{display:grid;gap:14px;grid-template-columns:1.5fr 1fr}@media(max-width:1000px){.a2g3{grid-template-columns:1fr}}
+.ch{width:100%}.qa{display:grid;gap:8px}.qa button{color:#fff;padding:13px;text-align:left}.q1{background:linear-gradient(90deg,#7C5CFF,#5B3FE0)}.q2{background:linear-gradient(90deg,#14B8A6,#0E9F8E)}.q3{background:linear-gradient(90deg,#22C55E,#16A34A)}.q4{background:linear-gradient(90deg,#2D6BFF,#1E50D6)}
+.li{display:flex;gap:10px;align-items:center;padding:8px 0;border-top:1px solid #7F8FFF22}.li:first-of-type{border-top:0}.li .t{flex:1;min-width:0}.li small{color:#9FB0E8;display:block}.pill{border-radius:99px;padding:2px 10px;font-size:12px;font-weight:800;background:#94a3b833}.pill.g{background:#22C55E33;color:#86EFAC}.pill.a{background:#F59E0B33;color:#FCD34D}.pill.r{background:#EF444433;color:#FCA5A5}
+.th{width:44px;height:44px;border-radius:10px;object-fit:cover;background:#2D3FB0;display:grid;place-items:center;font-weight:800}
+.a2t{overflow-x:auto}.a2t table{width:100%;min-width:960px;border-collapse:collapse;font-size:14px}.a2t th{text-align:left;color:#9FB0E8;font-size:12px;padding:10px}.a2t td{padding:10px;border-top:1px solid #7F8FFF22;vertical-align:top}
+.a2img{width:76px;height:76px;border-radius:14px;object-fit:cover}.a2img.ph{display:grid;place-items:center;border:2px dashed #7F8FFF55;color:#9FB0E8;font-size:22px;background:none}
+.a2bar{width:84px;height:6px;border-radius:9px;background:#ffffff26;margin:4px 0;overflow:hidden}.a2bar i{display:block;height:100%;background:#4F8BFF}
+.act{display:grid;grid-template-columns:1fr 1fr;gap:6px;width:270px}.act button,.a2b{border:1px solid #6C7BFF;background:transparent;color:#B7C3FF;border-radius:10px;padding:8px;font-size:12px;font-weight:800}.act .rd{border-color:#F87171;color:#FCA5A5}.act .gn{border-color:#22C55E;color:#86EFAC}
+.a2b{background:linear-gradient(90deg,#7C5CFF,#4F46E5);color:#fff;border:0;font-size:14px;padding:11px 16px}
+.f{display:grid;gap:10px}.f input,.f textarea,.f select{width:100%;font:500 16px Figtree,sans-serif;padding:12px;border-radius:10px;border:1.5px solid #7F8FFF55;background:#0B1440;color:#EAF0FF}.f label{font-size:13px;color:#9FB0E8}
+.a2g{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:6px;margin:12px 0}.a2nb{height:44px;border-radius:10px;border:2px solid #3B82F6;background:#1E3A8A99;color:#fff;font:800 14px Figtree,sans-serif;padding:0}.a2nb.reservado{background:#F59E0B;border-color:#F59E0B;color:#000}.a2nb.pago{background:#22C55E;border-color:#22C55E;color:#000}.a2nb.bloqueado{background:#8B5CF6;border-color:#8B5CF6}.a2nb.sel{outline:3px solid #fff;outline-offset:2px}
+.a2ac{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}.a2ac button{border:2px solid;background:transparent;border-radius:12px;padding:12px}.a2lib{border-color:#F87171;color:#FCA5A5}.a2res{border-color:#F59E0B;color:#FCD34D}.a2pag{border-color:#22C55E;color:#86EFAC}
+.dk{border:2px dashed #7F8FFF55;border-radius:16px;padding:20px;color:#9FB0E8;margin:0;text-align:center}
+.pf{display:grid;gap:10px}.pf input,.pf textarea,.pf select{width:100%;font:500 16px Figtree,sans-serif;padding:12px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink)}
+.tb{max-width:88%;padding:10px 12px;border-radius:16px;margin:8px 0;line-height:1.45;word-wrap:break-word}.tb small{display:block;font-weight:800;opacity:.8;margin-bottom:2px}
+.bu{margin-left:auto;background:var(--blue);color:#fff;border-bottom-right-radius:4px}.bx{background:var(--card);border:1px solid var(--line);border-bottom-left-radius:4px}
+.bc{background:#ffffff12;border:1px solid #7F8FFF33;border-bottom-left-radius:4px}.bs{margin-left:auto;background:linear-gradient(120deg,#4F46E5,#2D6BFF);color:#fff;border-bottom-right-radius:4px}.bi{margin:8px auto;background:#F59E0B22;border:1px solid #F59E0B77;color:#FCD34D;max-width:92%}
+.pst{border-radius:99px;padding:2px 10px;font-size:12px;font-weight:800;white-space:nowrap}.pst.b{background:#DBEAFE;color:#1E40AF}.pst.i{background:#E0E7FF;color:#3730A3}.pst.a{background:#FEF3C7;color:#92400E}.pst.g{background:#DCFCE7;color:#166534}
+.pill.pb{background:#3B82F633;color:#93C5FD}.pill.pi{background:#6366F133;color:#C7D2FE}.pill.pa{background:#F59E0B33;color:#FCD34D}.pill.pg{background:#22C55E33;color:#86EFAC}
+.tl{display:block;width:100%;text-align:left;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:12px;margin-bottom:8px;color:var(--ink)}.tl:hover{border-color:var(--blue)}
+.a2sp{display:grid;grid-template-columns:minmax(260px,390px) 1fr;gap:14px}@media(max-width:1000px){.a2sp{grid-template-columns:1fr}}
+.sf{grid-template-columns:1fr auto auto}@media(max-width:700px){.sf{grid-template-columns:1fr}}
+.ti{display:block;width:100%;text-align:left;background:#ffffff0d;border:1px solid #7F8FFF22;border-radius:14px;padding:12px;margin-bottom:8px;color:#E6ECFF}.ti.on{border-color:#7C5CFF;background:#4F46E533}.ti small{display:block;color:#9FB0E8}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#EF4444;margin-right:6px}
+.qrs{display:flex;flex-wrap:wrap;gap:6px}.qrs button{background:#ffffff14;color:#C3D1FF;border:1px solid #7F8FFF44;font-size:12px;padding:6px 10px;border-radius:99px}.bdg{background:#EF4444;color:#fff;border-radius:99px;padding:0 7px;font-size:12px;margin-left:6px}
+.thr{max-height:340px;overflow:auto;padding-right:4px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="veil"></div>
+<nav id="drawer" aria-label="Menu principal">
+  <a class="logo" href="#inicio" style="font-size:26px">Rifa<b>Já</b></a><hr style="border:0;border-top:1px solid #ffffff26;margin:14px 0">
+  <a href="#inicio">Início</a><a href="#rifas">Rifas</a><a href="#ganhadores">Ganhadores</a><a href="#como">Como funciona</a><a href="#faq">Perguntas frequentes</a><a href="#suporte">Suporte</a><a href="#dono" style="margin-top:10px;background:linear-gradient(90deg,#4F46E5,#2D6BFF);font-weight:800">Painel do dono (demo)</a>
+</nav>
+<header><div class="wrap bar0">
+  <button class="ico" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><i></i></button>
+  <a class="logo" href="#inicio" aria-label="RifaJá, início"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 8a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v3.2a4.8 4.8 0 0 0 0 9.6V24a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-3.2a4.8 4.8 0 0 0 0-9.6Z" fill="#1E5BFF"/><path d="M13 21V11h4.2a3 3 0 0 1 0 6H13m4.2 0 2.3 4" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Rifa<b>Já</b></a>
+  <span class="sp"></span><button class="gh" id="loginB">Entrar</button>
+</div></header>
+
+<div id="v-home">
+  <div id="inicio" class="hero"><svg class="tk" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 8a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v3.2a4.8 4.8 0 0 0 0 9.6V24a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-3.2a4.8 4.8 0 0 0 0-9.6Z" fill="#fff"/></svg>
+    <div class="wrap"><h1>Sua próxima oportunidade começa aqui.</h1><p>Escolha seus números, pague com PIX e acompanhe tudo na sua conta. Regras claras e resultados oficiais.</p>
+    <div class="cta"><a class="btn pri" href="#rifas">Ver rifas</a><a class="btn gh" href="#como">Como funciona</a></div></div></div>
+  <div class="wrap">
+    <section class="s" id="rifas"><h2>Rifas disponíveis</h2><p class="lead">Cada rifa tem tabela de números própria, valor por número e regulamento.</p><div class="grid" id="hg"></div></section>
+    <section class="s"><div style="display:flex;justify-content:space-between;align-items:end;gap:8px;flex-wrap:wrap"><div><h2>Ganhadores</h2><p class="lead" style="margin:0 0 22px">Resultados oficiais publicados pela equipe.</p></div><a href="#ganhadores" class="btn gh2">Ver todos</a></div><div class="gw" id="hw"></div></section>
+    <section class="s" id="como"><h2>Como funciona</h2><p class="lead">Do cadastro ao resultado, em quatro passos.</p>
+      <div class="steps"><div class="st rv"><b>1</b><h3>Crie sua conta</h3><p class="mu">Entre com Google ou e-mail.</p></div><div class="st rv" style="animation-delay:.08s"><b>2</b><h3>Escolha os números</h3><p class="mu">A tabela mostra o que está livre, reservado ou pago.</p></div><div class="st rv" style="animation-delay:.16s"><b>3</b><h3>Pague com PIX</h3><p class="mu">O número só vira pago quando o pagamento é confirmado.</p></div><div class="st rv" style="animation-delay:.24s"><b>4</b><h3>Acompanhe o resultado</h3><p class="mu">Ganhadores são anunciados com o número sorteado.</p></div></div></section>
+    <section class="s" id="faq"><h2>Perguntas frequentes</h2><p class="lead">Respostas rápidas.</p>
+      <details><summary>Preciso de conta para participar?</summary><p>Sim. A conta guarda seus pedidos e números.</p></details>
+      <details><summary>Quanto tempo meus números ficam reservados?</summary><p>Só enquanto você paga. Se o pagamento não for confirmado a tempo, a reserva expira e os números voltam a ficar livres.</p></details>
+      <details><summary>Quando meu número vira pago?</summary><p>Só quando o pagamento é confirmado pela equipe ou pelo provedor. Voltar ao site não confirma nada.</p></details>
+    </section>
+  </div>
+</div>
+<div id="v-rifa" hidden></div>
+<div id="v-gan" hidden></div>
+<div id="v-dono" hidden></div>
+<div id="v-sup" hidden></div>
+<footer><div class="wrap"><a class="logo" href="#inicio">Rifa<b>Já</b></a><p>Sua próxima oportunidade começa aqui.</p><p style="opacity:.7">Prévia de demonstração: nada é salvo e não há dados reais.</p></div></footer>
+<div id="toast" role="status"></div>
+
+<script>
+function $(s){return document.querySelector(s)}
+function esc(s){var d=document.createElement("div");d.textContent=s==null?"":String(s);return d.innerHTML}
+function qa(s){return esc(s).replace(/"/g,"&quot;")}
+function brl(v){return "R$ "+Number(v).toFixed(2).replace(".",",")}
+function toast(t){var e=$("#toast");e.textContent=t;e.className="on";clearTimeout(toast.t);toast.t=setTimeout(function(){e.className=""},3600)}
+var S={rf:[],ord:[],cp:[],gw:[],act:[]},cur=-1,sel=[],pg=0,ap=null,pd=null,tab="vis",ei=-1,es=[],ep=0,ed=-1,fi=-1;
+function log(t){S.act.unshift({t:t,d:Date.now()});S.act=S.act.slice(0,8)}
+function cnt(r,s){var c=0;for(var k in r.n)if(r.n[k]===s)c++;return c}
+function ago(d){var m=Math.max(0,Math.floor((Date.now()-d)/60000));return m<60?"há "+m+" min":"há "+Math.floor(m/60)+" h"}
+function im(r,c){return r.img?'<img class="'+c+'" src="'+r.img+'" alt="">':'<div class="'+c+' ph">'+esc((r.name||"?").charAt(0))+'</div>'}
+function ok(r){return r.st==="ativa"}
+
+/* menu */
+function menu(o){document.body.classList.toggle("open",o);$("#menuBtn").setAttribute("aria-expanded",o)}
+$("#menuBtn").onclick=function(){menu(true)};$("#veil").onclick=function(){menu(false)};
+$("#drawer").addEventListener("click",function(e){if(e.target.closest("a"))menu(false)});
+$("#loginB").onclick=function(){toast("Demonstração: o login real (Google ou e-mail) usa o Supabase.")};
+
+/* rotas */
+function route(){var h=location.hash.slice(1),k=h==="rifa"&&cur>=0?"rifa":h==="ganhadores"?"ganhadores":h==="dono"?"dono":h==="suporte"?"suporte":"home",m={home:"#v-home",rifa:"#v-rifa",ganhadores:"#v-gan",dono:"#v-dono",suporte:"#v-sup"};
+ ["#v-home","#v-rifa","#v-gan","#v-dono","#v-sup"].forEach(function(x){$(x).hidden=x!==m[k]});$("footer").hidden=$("header").hidden=k==="dono";
+ if(k==="home")rHome();if(k==="rifa")rRifa();if(k==="ganhadores")rGan();if(k==="dono")rDono();if(k==="suporte")rSup();
+ if(k!=="home")scrollTo(0,0)}
+addEventListener("hashchange",route);
+
+/* ganhadores */
+function gCard(g,k){return '<article class="win rv" style="animation-delay:'+k*.07+'s"><div class="wtop"><span class="trophy">🏆</span><span class="wnum">Nº '+esc(g.num)+'</span></div>'+(g.img?'<img class="wimg" src="'+g.img+'" alt="">':'')+'<div class="wb"><small>'+esc(g.date)+'</small><h3>'+esc(g.rifa)+'</h3><p class="mu" style="margin:0">'+esc(g.prize)+'</p><p class="wn"><small>Ganhador(a)</small><b>'+esc(g.name)+'</b></p>'+(g.msg?'<p class="mu" style="margin:0">'+esc(g.msg)+'</p>':'')+'</div></article>'}
+function gList(s,n){var l=S.gw.slice(0,n||99);$(s).innerHTML=l.length?l.map(gCard).join(""):'<p class="empty">Ainda não há resultados publicados. Não exibimos ganhadores de exemplo.</p>'}
+function rGan(){$("#v-gan").innerHTML='<div class="wrap pad"><a href="#inicio" class="back">← Voltar</a><h1 style="font-size:clamp(32px,6vw,52px);margin:12px 0 6px">Ganhadores</h1><p class="lead">Resultados oficiais, com o número sorteado e a data.</p><div class="gw" id="gl"></div></div>';gList("#gl")}
+
+/* home */
+function rHome(){var h="";S.rf.forEach(function(r,i){if(!ok(r))return;var p=Math.round(cnt(r,"pago")/r.t*100);h+='<article class="card rv">'+im(r,"cimg")+'<div class="cb"><span class="tag">Ativa</span><h3>'+esc(r.name)+'</h3><p class="mu">'+esc(r.prize)+'</p><div class="bar"><i style="width:'+p+'%"></i></div><p class="mu s">'+p+'% vendido · '+brl(r.p)+' por número</p><a class="btn pri" href="#rifa" data-r="'+i+'">Escolher números</a></div></article>'});
+ $("#hg").innerHTML=h||'<p class="empty">Nenhuma rifa ativa no momento. As rifas criadas e publicadas pelo administrador aparecem aqui.</p>';gList("#hw",3)}
+$("#hg").addEventListener("click",function(e){var a=e.target.closest("[data-r]");if(a){cur=+a.dataset.r;sel=[];pg=0;ap=null;pd=null}});
+
+/* página da rifa: tabela + pagamento */
+function rRifa(){var r=S.rf[cur];if(!r){location.hash="inicio";return}
+ if(pd&&pd.ri!==cur)pd=null;
+ $("#v-rifa").innerHTML='<div class="wrap pad"><a href="#inicio" class="back">← Voltar</a><div class="rhero">'+im(r,"rimg")+'<div class="rov"><span class="tag" style="background:#fff3;color:#fff">'+(ok(r)?"Ativa":"Pré-visualização (rascunho)")+'</span><h1>'+esc(r.name)+'</h1><p>'+esc(r.prize)+'</p></div></div><div class="stats"><div><small>Valor por número</small><b>'+brl(r.p)+'</b></div><div><small>Números</small><b>'+r.t+'</b></div><div><small>Vendidos</small><b>'+cnt(r,"pago")+'</b></div></div><div id="rbody"></div></div>';rBody()}
+function rBody(){var r=S.rf[cur];if(pd){$("#rbody").innerHTML=oView();return}
+ var oc=Object.keys(r.n).length,pc=Math.round(cnt(r,"pago")/r.t*100);
+ $("#rbody").innerHTML='<section class="panel"><div class="ph2"><h2>Tabela de números</h2></div><div class="bar big"><i style="width:'+pc+'%"></i></div><p class="mu s">'+(r.t-oc)+' livres de '+r.t+' · '+pc+'% vendido</p>'+(ok(r)?"":'<p class="warn">Pré-visualização: a escolha de números abre quando a rifa for publicada.</p>')+'<div class="leg"><span>Disponível</span><span style="background:#1E5BFF;border-color:#1E5BFF;color:#fff">Selecionado por você</span><span style="background:#FEF3C7;border-color:#FCD34D;color:#B45309">Reservado</span><span style="background:#CBD5E1;border-color:#CBD5E1;color:#64748B">Ocupado (pago)</span></div><div class="srch"><input id="gotoN" inputmode="numeric" placeholder="Ir ao número…" aria-label="Ir ao número"><button class="gh2" id="gotoB">Ir</button><button class="pri" data-rand="1">+1 aleatório</button><button class="pri" data-rand="5">+5</button><button class="pri" data-rand="10">+10</button></div><div class="ng" id="ng"></div><div class="pagr" id="pagr"></div></section>'+
+ '<section class="panel" id="pagamento"><h2>Pagamento</h2><p class="mu s" style="margin:2px 0 10px">Números escolhidos</p><div class="chips" id="chips"></div><label class="lb" for="cpIn">Cupom de desconto</label><div class="cprow"><input id="cpIn" placeholder="Digite o cupom" autocapitalize="characters"><button class="gh2" id="cpB">Aplicar</button></div><p id="cpM"></p><div class="sum" id="sum"></div><button class="btn pri big" id="payB">Continuar para pagamento</button><p class="mu s" style="margin:10px 0 0">No site real, o servidor confere números, cupom e valor, e só marca como pago quando o PIX é confirmado pelo provedor.</p></section>';
+ rGrid();rSum()}
+function rGrid(){var r=S.rf[cur],a=pg*100+1,b=Math.min(r.t,a+99),h="",n;
+ for(n=a;n<=b;n++){var s=r.n[n]||"livre",on=sel.indexOf(n)>-1;h+='<button class="nb '+(s==="bloqueado"?"reservado":s)+(on?" sel":"")+'" data-n="'+n+'"'+(s!=="livre"||!ok(r)?" disabled":"")+' aria-label="Número '+n+'">'+n+'</button>'}
+ $("#ng").innerHTML=h;var pgs=Math.ceil(r.t/100);$("#pagr").innerHTML=pgs>1?'<button class="gh2" data-pg="-1"'+(pg?"":" disabled")+'>Anterior</button><b>'+a+'–'+b+' de '+r.t+'</b><button class="gh2" data-pg="1"'+(pg<pgs-1?"":" disabled")+'>Próxima</button>':""}
+function dsc(sub){if(!ap)return 0;return Math.min(ap.t==="pct"?sub*ap.v/100:ap.v,sub)}
+function rSum(){var r=S.rf[cur],s=sel.slice().sort(function(a,b){return a-b}),sub=s.length*r.p,d=dsc(sub);
+ $("#chips").innerHTML=s.length?s.map(function(n){return '<button class="chip" data-n="'+n+'" aria-label="Remover '+n+'">'+n+' ×</button>'}).join(""):'<span class="mu">Toque nos números da tabela acima.</span>';
+ $("#sum").innerHTML='<div><span>'+s.length+' × '+brl(r.p)+'</span><b>'+brl(sub)+'</b></div>'+(d?'<div class="dc"><span>Desconto do cupom</span><b>− '+brl(d)+'</b></div>':"")+'<div class="tt"><span><b style="font-size:16px">Total</b></span><b>'+brl(sub-d)+'</b></div>';
+ $("#payB").disabled=!s.length||!ok(r)}
+function oView(){var o=pd;return '<section class="panel">'+(o.st==="pago"?'<div class="ok"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="26" fill="#16A34A"/><path d="M16 29l8 8 16-17" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><h2 style="margin-top:10px">Pagamento aprovado!</h2><p>Seus números: <b>'+o.nums.join(", ")+'</b></p><p class="mu">A tabela e o painel já foram atualizados.</p></div>':'<h2>Pague com PIX</h2><div class="qr" aria-label="QR Code de exemplo"></div><p style="text-align:center;margin:0">Chave PIX: <b>614.560.413-12</b></p><p class="mu s" style="text-align:center;margin:0">QR de exemplo. No site real, o QR e o copia e cola já vêm com o valor exato.</p><p style="text-align:center">Total <b>'+brl(o.total)+'</b> · números '+o.nums.join(", ")+'</p><p class="live" style="text-align:center">Aguardando a confirmação do pagamento…</p><div class="demo"><span><b>Somente demonstração:</b> no site real, depois que o cliente paga na sua chave PIX, você confere e confirma em Pagamentos (ou o provedor confirma sozinho, se estiver configurado). Este botão imita essa confirmação para você ver a tabela e o painel atualizando.</span><button class="gh2" id="simB">Simular aviso do provedor</button></div><div style="text-align:center"><button class="lnk" id="canB">Cancelar e liberar os números</button></div>')+'<p style="text-align:center;margin-bottom:0"><a href="#inicio" class="back">Voltar ao início</a></p></section>'}
+$("#v-rifa").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;var r=S.rf[cur];if(!r)return;
+ if(b.dataset.n){var n=+b.dataset.n,k=sel.indexOf(n);if(k<0){if(r.n[n]||!ok(r))return;sel.push(n)}else sel.splice(k,1);rGrid();rSum()}
+ else if(b.dataset.pg){pg+=+b.dataset.pg;rGrid()}
+ else if(b.dataset.rand){var q=+b.dataset.rand,d=[],i;for(i=1;i<=r.t;i++)if(!r.n[i]&&sel.indexOf(i)<0)d.push(i);d.sort(function(){return Math.random()-.5});sel=sel.concat(d.slice(0,q));rGrid();rSum()}
+ else if(b.id==="gotoB"){var g=parseInt($("#gotoN").value,10);if(g>=1&&g<=r.t){pg=Math.floor((g-1)/100);rGrid()}}
+ else if(b.id==="cpB"){var code=$("#cpIn").value.trim().toUpperCase(),m=$("#cpM"),c=S.cp.filter(function(x){return x.code===code})[0];m.style.color="#B45309";
+  if(!code){m.textContent="Digite o código do cupom.";return}if(!sel.length){m.textContent="Escolha ao menos um número antes de aplicar o cupom.";return}
+  if(!c||!c.on){ap=null;m.textContent="Cupom não encontrado ou desativado.";rSum();return}if(c.fim&&Date.now()>c.fim){ap=null;m.textContent="Este cupom expirou.";rSum();return}
+  ap=c;m.style.color="#0F8A4F";m.textContent="Cupom "+code+" aplicado.";rSum()}
+ else if(b.id==="payB"){var s=sel.slice().sort(function(a,b){return a-b}),sub=s.length*r.p,d2=dsc(sub);if(!s.length)return;
+  s.forEach(function(n){r.n[n]="reservado"});pd={id:S.ord.length+1,ri:cur,rifa:r.name,nums:s,total:sub-d2,st:"pendente",d:Date.now()};S.ord.unshift(pd);sel=[];ap=null;log("Pedido #"+pd.id+" criado: "+s.length+" número(s), aguardando pagamento");rBody()}
+ else if(b.id==="simB"){pd.st="pago";pd.nums.forEach(function(n){r.n[n]="pago"});log("Pagamento confirmado: pedido #"+pd.id+" ("+brl(pd.total)+")");toast("Aviso do provedor recebido: números marcados como pagos.");rBody()}
+ else if(b.id==="canB"){pd.nums.forEach(function(n){delete r.n[n]});pd.st="cancelado";log("Pedido #"+pd.id+" cancelado, números liberados");pd=null;toast("Pedido cancelado e números liberados.");rBody()}});
+
+/* painel do dono (acesso: adicionar #dono ao endereço) */
+function rDono(){var T=[["vis","Visão geral"],["rif","Rifas e campanhas"],["cup","Cupons promocionais"],["gan","Sorteios e ganhadores"],["ped","Pedidos e pagamentos"],["sup","Suporte"]];
+ $("#v-dono").innerHTML='<div class="a2"><aside class="a2s"><b class="a2l">Rifa<span>Já</span></b>'+T.map(function(t){return '<button class="a2i'+(tab===t[0]?" on":"")+'" data-tab="'+t[0]+'">'+t[1]+(t[0]==="sup"&&pend()?'<span class="bdg">'+pend()+'</span>':"")+'</button>'}).join("")+'<a class="a2i" href="#inicio">← Voltar ao site</a></aside><div class="a2m"><p class="a2n0">Demonstração em memória: nada é salvo. No site real o painel exige login e permissão verificada no servidor, e só o dono entra.</p><h2>Painel Administrativo <span class="a2tag">Demo</span></h2><div id="dm"></div><input type="file" id="fFile" accept="image/*" hidden></div></div>';dTab()}
+function dTab(){({vis:tVis,rif:tRif,cup:tCup,gan:tGan,ped:tPed,sup:tSup})[tab]()}
+function chart(){var D=[],i,W=620,H=200,px=30,py=26;for(i=6;i>=0;i--){var d=new Date(Date.now()-i*864e5);D.push({k:d.toDateString(),l:d.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"}),v:0})}
+ S.ord.forEach(function(o){if(o.st!=="pago")return;var k=new Date(o.d).toDateString();D.forEach(function(x){if(x.k===k)x.v+=o.total})});
+ if(!D.some(function(x){return x.v>0}))return '<p class="dk">Sem vendas nos últimos 7 dias.</p>';
+ var mx=Math.max.apply(null,D.map(function(x){return x.v})),st=(W-2*px)/6,P=D.map(function(x,i){return[px+i*st,H-py-(x.v/mx)*(H-2*py)]}),L=P.map(function(p,i){return(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)}).join(" ");
+ return '<svg viewBox="0 0 '+W+' '+H+'" class="ch" role="img" aria-label="Vendas dos últimos 7 dias"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7C5CFF" stop-opacity=".55"/><stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/></linearGradient></defs><path d="'+L+' L'+P[6][0]+' '+(H-py)+' L'+px+' '+(H-py)+'Z" fill="url(#ag)"/><path d="'+L+'" fill="none" stroke="#9D8BFF" stroke-width="3" stroke-linejoin="round"/>'+P.map(function(p,i){return '<circle cx="'+p[0]+'" cy="'+p[1]+'" r="4.5" fill="#B9ADFF"/><text x="'+p[0]+'" y="'+(H-6)+'" text-anchor="middle" font-size="11" fill="#9FB0E8">'+D[i].l+'</text>'}).join("")+'</svg>'}
+function tVis(){var at=0,pg2=0,rec=0,pen=0,pv=0;S.rf.forEach(function(r){if(ok(r))at++;pg2+=cnt(r,"pago")});S.ord.forEach(function(o){if(o.st==="pago")rec+=o.total;if(o.st==="pendente"){pen++;pv+=o.total}});
+ var K=[["Rifas ativas",at,"de "+S.rf.length+" cadastradas"],["Prêmios cadastrados",S.rf.length,"rifas e rascunhos"],["Participações",pg2,"números pagos"],["Pagamentos pendentes",pen,brl(pv)],["Receita total",brl(rec),"pagamentos recebidos"],["Chamados pendentes",pend(),"aguardando a equipe"]];
+ $("#dm").innerHTML='<div class="a2k">'+K.map(function(k){return '<div class="a2kc"><span>'+k[0]+'</span><b>'+k[1]+'</b><small>'+k[2]+'</small></div>'}).join("")+'</div><div class="a2g3"><section class="a2c"><h3>Vendas dos últimos 7 dias</h3>'+chart()+'</section><section class="a2c"><h3>Ações rápidas</h3><div class="qa"><button class="q1" data-tab="rif" data-go="1">+ Nova rifa</button><button class="q2" data-tab="cup">+ Criar cupom</button><button class="q3" data-tab="gan">+ Anunciar ganhador</button><button class="q4" data-tab="ped">Ver pagamentos</button></div></section></div><div class="a2g3"><section class="a2c"><h3>Últimos pedidos</h3>'+(S.ord.length?S.ord.slice(0,5).map(function(o){var r=S.rf[o.ri]||{};return '<div class="li">'+im(r,"th")+'<span class="t"><b>#'+o.id+' · '+esc(o.rifa)+'</b><small>'+ago(o.d)+'</small></span><span style="text-align:right"><b>'+brl(o.total)+'</b><br><span class="pill '+(o.st==="pago"?"g":o.st==="pendente"?"a":"r")+'">'+(o.st==="pago"?"Pago":o.st==="pendente"?"Pendente":"Cancelado")+'</span></span></div>'}).join(""):'<p class="dk">Nenhum pedido ainda.</p>')+'</section><section class="a2c"><h3>Atividades recentes</h3>'+(S.act.length?S.act.map(function(a){return '<div class="li"><span class="t">'+esc(a.t)+'<small>'+ago(a.d)+'</small></span></div>'}).join(""):'<p class="dk">Nenhuma atividade ainda.</p>')+'</section></div>'}
+function tRif(){var e=ed>=0?S.rf[ed]:null,h='<section class="a2c"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0">Gerenciar rifas</h3><button class="a2b" data-tab="rif" data-go="1">+ Nova rifa</button></div>';
+ if(!S.rf.length)h+='<p class="dk" style="margin-top:12px">Você ainda não criou nenhuma rifa. Use o formulário abaixo: a tabela de números é criada na hora.</p>';
+ else{h+='<div class="a2t"><table><thead><tr><th>Foto do prêmio</th><th>Nome da rifa</th><th>Prêmio</th><th>Preço por número</th><th>Total</th><th>Vendidos</th><th>Status</th><th>Ações</th></tr></thead><tbody>';
+  S.rf.forEach(function(r,i){var p=cnt(r,"pago"),pc=Math.round(p/r.t*100);h+='<tr><td>'+im(r,"a2img")+'</td><td><b>'+esc(r.name)+'</b></td><td>'+esc(r.prize||"—")+'</td><td>'+brl(r.p)+'</td><td>'+r.t+'</td><td><b>'+p+'</b><div class="a2bar"><i style="width:'+pc+'%"></i></div>'+pc+'%</td><td><span class="pill '+(ok(r)?"g":"a")+'">'+r.st+'</span></td><td><div class="act"><button data-a="ed" data-i="'+i+'">✎ Editar</button><button data-a="nu" data-i="'+i+'">▦ Editar números</button><button data-a="fo" data-i="'+i+'">▣ Trocar foto</button><button data-a="pr" data-i="'+i+'">★ Editar prêmio</button>'+(ok(r)?'<button data-a="pau" data-i="'+i+'">⏸ Pausar</button>':'<button class="gn" data-a="pub" data-i="'+i+'">▶ Publicar</button>')+'<button data-a="ver" data-i="'+i+'">ⓘ Ver página</button><button class="rd" data-a="de" data-i="'+i+'">🗑 Excluir</button></div></td></tr>'});
+  h+='</tbody></table></div>'}
+ h+='</section><form class="a2c f" id="fm"><h3>'+(e?"Editar rifa":"Nova rifa")+'</h3><input id="fn" placeholder="Nome da rifa" aria-label="Nome da rifa" value="'+(e?qa(e.name):"")+'"><input id="fp" placeholder="Prêmio (ex.: PlayStation 5 Slim 1TB)" aria-label="Prêmio" value="'+(e?qa(e.prize):"")+'"><input id="fv" inputmode="decimal" placeholder="Valor por número em R$" aria-label="Valor" value="'+(e?String(e.p).replace(".",","):"")+'"><input id="ft" inputmode="numeric" placeholder="Quantidade de números (1 a 1000)" aria-label="Quantidade" value="'+(e?e.t:"")+'"><label>Foto do prêmio<input id="fim" type="file" accept="image/*"></label><button class="a2b">'+(e?"Salvar alterações":"Criar rifa")+'</button>'+(e?'<button type="button" class="a2b" data-a="cn">Cancelar edição</button>':"")+'</form>';
+ var r=ei>=0?S.rf[ei]:null;
+ if(r){var a=ep*100+1,b=Math.min(r.t,a+99),g="",n;for(n=a;n<=b;n++)g+='<button class="a2nb '+(r.n[n]||"livre")+(es.indexOf(n)>-1?" sel":"")+'" data-a="en" data-n="'+n+'">'+n+'</button>';var pgs=Math.ceil(r.t/100);
+  h+='<section class="a2c" id="ned"><h3>Editar números da rifa: '+esc(r.name)+'</h3><div style="display:flex;gap:8px;flex-wrap:wrap;font-size:12px;font-weight:800"><span style="border:2px solid #3B82F6;border-radius:8px;padding:3px 9px">Disponível</span><span style="background:#F59E0B;color:#000;border-radius:8px;padding:3px 9px">Reservado (cliente)</span><span style="background:#22C55E;color:#000;border-radius:8px;padding:3px 9px">Pago</span><span style="background:#8B5CF6;border-radius:8px;padding:3px 9px">Reservado pela equipe</span></div><div class="a2g">'+g+'</div>'+(pgs>1?'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><button class="a2b" data-a="ep" data-d="-1"'+(ep?"":" disabled")+'>Anterior</button><b>'+a+'–'+b+' de '+r.t+'</b><button class="a2b" data-a="ep" data-d="1"'+(ep<pgs-1?"":" disabled")+'>Próxima</button></div>':"")+'<p style="margin:0 0 10px">'+(es.length?"Selecionados: "+es.slice().sort(function(x,y){return x-y}).join(", "):"Toque nos números para selecionar.")+'</p><div class="f"><textarea id="why" rows="2" placeholder="Justificativa para Marcar como pago (mínimo 15 caracteres)"></textarea><div class="a2ac"><button class="a2lib" data-a="ac" data-ac="liberar">Liberar número</button><button class="a2res" data-a="ac" data-ac="bloquear">Reservar número</button><button class="a2pag" data-a="ac" data-ac="vender">Marcar como pago</button></div></div></section>'}
+ $("#dm").innerHTML=h}
+function cOn(c){return c.on&&(!c.fim||c.fim>Date.now())}
+function rest(c){if(!c.fim)return"Sem prazo para acabar";var ms=c.fim-Date.now();if(ms<=0)return"Expirou";var m=Math.floor(ms/6e4),d=Math.floor(m/1440),h=Math.floor(m%1440/60);return"Acaba em "+(d?d+"d "+h+"h":h?h+"h "+m%60+"min":m%60+"min")}
+function tCup(){$("#dm").innerHTML='<form class="a2c f" id="cf"><h3>Ativar cupom</h3><input id="cc" placeholder="Nome do cupom (ex.: BEMVINDO10)" aria-label="Nome do cupom" style="text-transform:uppercase"><select id="ct" aria-label="Tipo"><option value="pct">Desconto em %</option><option value="val">Desconto em R$</option></select><input id="cv" inputmode="decimal" placeholder="Valor do desconto" aria-label="Valor"><label>Tempo de duração<select id="cd"><option value="1">1 hora</option><option value="6">6 horas</option><option value="24" selected>24 horas</option><option value="168">7 dias</option><option value="720">30 dias</option><option value="0">Sem prazo para acabar</option></select></label><button class="a2b">Ativar cupom</button></form><section class="a2c"><h3>Cupons</h3>'+(S.cp.length?S.cp.map(function(c,i){return '<div class="li"><span class="t"><b>'+esc(c.code)+'</b> <span class="pill '+(cOn(c)?"g":"")+'">'+(!c.on?"Desativado":cOn(c)?"Valendo agora":"Expirado")+'</span><small>'+(c.t==="pct"?c.v+"%":brl(c.v))+' · '+rest(c)+'</small></span><button class="a2b" data-a="ct" data-i="'+i+'">'+(c.on?"Desativar":"Ativar")+'</button><button class="a2b" data-a="cx" data-i="'+i+'">+1 dia</button></div>'}).join(""):'<p class="dk">Nenhum cupom cadastrado.</p>')+'</section>'}
+function tGan(){$("#dm").innerHTML=(S.rf.length?'<form class="a2c f" id="gf"><h3>Anunciar ganhador</h3><select id="gr" aria-label="Rifa">'+S.rf.map(function(r,i){return '<option value="'+i+'">'+esc(r.name)+'</option>'}).join("")+'</select><input id="gn" inputmode="numeric" placeholder="Número sorteado" aria-label="Número sorteado"><input id="gw" placeholder="Nome do ganhador (ex.: Maria S.)" aria-label="Ganhador"><textarea id="gm" rows="2" placeholder="Mensagem do anúncio (opcional)"></textarea><button class="a2b">Publicar resultado</button></form>':'<p class="a2c dk">Crie uma rifa antes de anunciar um ganhador.</p>')+'<section class="a2c"><h3>Resultados publicados</h3>'+(S.gw.length?S.gw.map(function(g,i){return '<div class="li"><span class="t"><b>'+esc(g.rifa)+'</b><small>Nº '+esc(g.num)+' · '+esc(g.name)+' · '+esc(g.date)+'</small></span><button class="a2b" data-a="gx" data-i="'+i+'">Remover</button></div>'}).join(""):'<p class="dk">Nenhum resultado publicado.</p>')+'</section>'}
+function tPed(){$("#dm").innerHTML='<section class="a2c"><h3>Pedidos e pagamentos</h3><p style="margin:0 0 8px;color:#9FB0E8">Somente consulta. A confirmação vem do provedor de pagamento; confirmação manual exige permissão do dono, justificativa e fica na auditoria.</p>'+(S.ord.length?S.ord.map(function(o){return '<div class="li"><span class="t"><b>#'+o.id+' · '+esc(o.rifa)+'</b><small>Números '+o.nums.join(", ")+' · '+ago(o.d)+'</small></span><b>'+brl(o.total)+'</b><span class="pill '+(o.st==="pago"?"g":o.st==="pendente"?"a":"r")+'">'+(o.st==="pago"?"Pago":o.st==="pendente"?"Pendente":"Cancelado")+'</span></div>'}).join(""):'<p class="dk">Nenhum pedido ainda. Faça uma compra na página de uma rifa publicada.</p>')+'</section>'}
+$("#v-dono").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+ if(b.dataset.tab){tab=b.dataset.tab;ei=-1;ed=-1;rDono();if(b.dataset.go)setTimeout(function(){var f=$("#fm");if(f)f.scrollIntoView({behavior:"smooth"})},60);return}
+ var a=b.dataset.a,i=+b.dataset.i,r=S.rf[i];if(!a)return;
+ if(a==="ed"||a==="pr"){ed=i;dTab();var f=$("#fm");f.scrollIntoView({behavior:"smooth"});(a==="pr"?$("#fp"):$("#fn")).focus()}
+ else if(a==="cn"){ed=-1;dTab()}
+ else if(a==="nu"){ei=i;es=[];ep=0;dTab();$("#ned").scrollIntoView({behavior:"smooth"})}
+ else if(a==="fo"){fi=i;$("#fFile").click()}
+ else if(a==="pub"){r.st="ativa";log("Rifa publicada: "+r.name);toast("Rifa publicada. Ela já aparece no site.");dTab()}
+ else if(a==="pau"){r.st="pausada";log("Rifa pausada: "+r.name);dTab()}
+ else if(a==="ver"){cur=i;sel=[];pg=0;ap=null;pd=null;location.hash="rifa";if(location.hash!=="#rifa")route()}
+ else if(a==="de"){if(b.dataset.arm){log("Rifa excluída: "+r.name);S.rf.splice(i,1);ei=-1;ed=-1;if(cur===i)cur=-1;dTab();toast("Rifa excluída.")}else{b.dataset.arm="1";b.textContent="Confirmar exclusão";setTimeout(function(){if(b.isConnected){b.dataset.arm="";b.textContent="🗑 Excluir"}},4000)}}
+ else if(a==="en"){var n=+b.dataset.n,k=es.indexOf(n);if(k<0)es.push(n);else es.splice(k,1);dTab()}
+ else if(a==="ep"){ep+=+b.dataset.d;dTab()}
+ else if(a==="ac"){var q=S.rf[ei],ac=b.dataset.ac,why=$("#why").value.trim();if(!q||!es.length){toast("Selecione números na tabela.");return}
+  if(ac==="vender"&&why.length<15){toast("Para marcar como pago, escreva uma justificativa de pelo menos 15 caracteres.");return}
+  var c2=0,er="";es.forEach(function(n){var s=q.n[n]||"livre";
+   if(ac==="bloquear"){if(s!=="livre"){er="O número "+n+" já está ocupado.";return}q.n[n]="bloqueado";c2++}
+   else if(ac==="liberar"){if(s!=="bloqueado"){er="Só números reservados pela equipe podem ser liberados (número "+n+").";return}delete q.n[n];c2++}
+   else{if(s==="pago"){er="O número "+n+" já está pago.";return}if(s==="reservado"){er="O número "+n+" é de um pedido de cliente: o provedor confirma.";return}q.n[n]="pago";S.ord.unshift({id:S.ord.length+1,ri:ei,rifa:q.name,nums:[n],total:q.p,st:"pago",d:Date.now()});c2++}});
+  if(c2)log("Números editados em "+q.name+": "+c2+" ("+ac+")");es=[];dTab();toast(c2+" número(s) atualizado(s)."+(er?" "+er:""))}
+ else if(a==="ct"){S.cp[i].on=!S.cp[i].on;dTab()}
+ else if(a==="cx"){var c=S.cp[i];c.fim=Math.max(Date.now(),c.fim||0)+864e5;c.on=true;dTab();toast("Tempo do cupom prorrogado.")}
+ else if(a==="gx"){S.gw.splice(i,1);dTab()}
+ else if(a==="st"){sSel=i;sL();sC()}
+ else if(a==="qr"){var tx=$("#sr");tx.value=QR[+b.dataset.q];tx.focus()}
+ else if(a==="sSend"){var t=TK[sSel],bd=$("#sr").value.trim(),it=$("#si").checked;if(!t||!bd){toast("Escreva a mensagem.");return}
+  t.m.push({w:it?"i":"s",b:bd,t:Date.now()});
+  if(!it){if(t.st==="aberto"||t.st==="em_atendimento")t.st="aguardando_resposta";t.u=Date.now();log("Resposta no chamado #"+t.n);toast("Resposta enviada. O cliente seria notificado.")}else toast("Nota interna salva (o cliente não vê).");
+  tSup()}
+ else if(a==="sSave"){var t2=TK[sSel];if(!t2)return;t2.st=$("#sst").value;t2.u=Date.now();log("Chamado #"+t2.n+": "+STL[t2.st]);toast("Status atualizado.");tSup()}});
+$("#v-dono").addEventListener("input",function(e){if(e.target.id==="sq"){fq=e.target.value;sL()}});
+$("#v-dono").addEventListener("change",function(e){if(e.target.id==="sfs"){fs=e.target.value;sL()}if(e.target.id==="sfc"){fc=e.target.value;sL()}});
+$("#v-dono").addEventListener("submit",function(e){e.preventDefault();var id=e.target.id;
+ if(id==="fm"){var nm=$("#fn").value.trim(),pz=$("#fp").value.trim(),p=parseFloat($("#fv").value.replace(",",".")),t=parseInt($("#ft").value,10),f=$("#fim").files[0];
+  if(!nm||!(p>0)||!(t>=1&&t<=1000)){toast("Preencha nome, valor maior que zero e quantidade de 1 a 1000.");return}
+  var fin=function(img){if(ed>=0){var r=S.rf[ed],mx=Math.max.apply(null,Object.keys(r.n).map(Number).concat([0]));if(t<mx){toast("Já existem números acima dessa quantidade.");return}r.name=nm;r.prize=pz;r.p=p;r.t=t;if(img)r.img=img;log("Rifa editada: "+nm);toast("Alterações salvas.");ed=-1;dTab()}
+   else{S.rf.push({name:nm,prize:pz,p:p,t:t,img:img||"",n:{},st:"rascunho"});ei=S.rf.length-1;es=[];ep=0;log("Rifa criada: "+nm);toast("Rifa criada como rascunho. A tabela de números já está pronta abaixo.");dTab();var x=$("#ned");if(x)x.scrollIntoView({behavior:"smooth"})}};
+  if(f){var fr=new FileReader();fr.onload=function(){fin(fr.result)};fr.readAsDataURL(f)}else fin("")}
+ else if(id==="cf"){var code=$("#cc").value.trim().toUpperCase().replace(/\s+/g,""),v=parseFloat($("#cv").value.replace(",",".")),h=+$("#cd").value;
+  if(!/^[A-Z0-9_-]{3,30}$/.test(code)||!(v>0)){toast("Nome do cupom: 3 a 30 letras ou números, sem espaços. Informe também o desconto.");return}
+  if(S.cp.some(function(c){return c.code===code})){toast("Esse nome de cupom já existe.");return}
+  S.cp.unshift({code:code,t:$("#ct").value,v:v,on:true,fim:h?Date.now()+h*36e5:0});log("Cupom ativado: "+code);dTab();toast("Cupom "+code+" ativado.")}
+ else if(id==="gf"){var r2=S.rf[+$("#gr").value],num=$("#gn").value.trim(),w=$("#gw").value.trim();if(!r2||!num||!w){toast("Informe a rifa, o número sorteado e o nome do ganhador.");return}
+  S.gw.unshift({rifa:r2.name,prize:r2.prize,img:r2.img,num:num.padStart(String(r2.t).length,"0"),name:w,msg:$("#gm").value.trim(),date:new Date().toLocaleDateString("pt-BR")});log("Ganhador anunciado: "+r2.name);dTab();toast("Resultado publicado na página Ganhadores.")}});
+$("#v-dono").addEventListener("change",function(e){if(e.target.id!=="fFile")return;var f=e.target.files[0];if(!f||fi<0)return;var fr=new FileReader();fr.onload=function(){S.rf[fi].img=fr.result;log("Foto trocada: "+S.rf[fi].name);dTab();toast("Foto trocada.")};fr.readAsDataURL(f);e.target.value=""});
+/* suporte */
+var TK=[],tn=0,tcur=-1,sSel=-1,fq="",fs="",fc="";
+var CATS=["Conta","Pagamento","Participação","Campanha","Outro"],STL={aberto:"Aberto",em_atendimento:"Em atendimento",aguardando_resposta:"Aguardando resposta",resolvido:"Resolvido"},STC={aberto:"b",em_atendimento:"i",aguardando_resposta:"a",resolvido:"g"};
+var QR=["Olá! Já estamos verificando o seu caso e voltamos em instantes.","Pode enviar o comprovante do pagamento para conferirmos?","O número só é marcado como pago depois que o provedor confirma o PIX. Isso pode levar alguns minutos.","Resolvido! Se precisar de algo mais, é só responder por aqui."];
+function pend(){return TK.filter(function(t){return t.st==="aberto"||t.st==="em_atendimento"}).length}
+function dt(d){return new Date(d).toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"})}
+function bubT(m,staff){var c=m.w==="i"?"bi":m.w==="s"?(staff?"bs":"bx"):(staff?"bc":"bu"),who=m.w==="i"?"Nota interna (o cliente não vê)":m.w==="s"?"Equipe RifaJá":(staff?"Cliente":"Você");return '<div class="tb '+c+'"><small>'+who+' · '+dt(m.t)+'</small>'+esc(m.b)+'</div>'}
+function opts(a,v,all){return (all?'<option value="">'+all+'</option>':"")+a.map(function(x){var k=typeof x==="string"?x:x[0],l=typeof x==="string"?x:x[1];return '<option value="'+k+'"'+(k===v?" selected":"")+'>'+l+'</option>'}).join("")}
+function rSup(){
+ $("#v-sup").innerHTML='<div class="wrap pad"><a href="#inicio" class="back">← Voltar</a><h1 style="font-size:clamp(32px,6vw,52px);margin:12px 0 6px">Central de suporte</h1><p class="lead">Estamos aqui para ajudar com sua conta, pagamentos e participações.</p>'+
+ '<div class="steps"><div class="st rv"><b>＋</b><h3>Abrir chamado</h3><p class="mu">Conte o que aconteceu e acompanhe a resposta.</p></div><div class="st rv" style="animation-delay:.08s"><b>☰</b><h3>Meus chamados</h3><p class="mu">Histórico, status e datas de cada atendimento.</p></div><div class="st rv" style="animation-delay:.16s"><b>?</b><h3>Perguntas frequentes</h3><p class="mu">Respostas rápidas para dúvidas comuns.</p></div></div>'+
+ '<section class="panel"><h2>Abrir chamado</h2><div class="pf" style="margin-top:10px"><input id="ps" placeholder="Assunto" aria-label="Assunto"><select id="pc" aria-label="Categoria">'+CATS.map(function(c){return '<option>'+c+'</option>'}).join("")+'</select><textarea id="pb" rows="4" placeholder="Descreva o problema com o máximo de detalhes" aria-label="Descrição"></textarea><button class="btn pri big" id="pSend">Enviar chamado</button></div></section>'+
+ '<section class="panel"><h2>Meus chamados</h2><div id="pl" style="margin-top:10px"></div></section><section class="panel" id="pt" hidden></section>'+
+ '<section class="panel" id="pfaq"><h2>Perguntas frequentes</h2><div style="margin-top:10px"><details><summary>Paguei o PIX e meu número não apareceu como pago.</summary><p>O número só é marcado depois que o provedor confirma o pagamento. Se demorar, abra um chamado na categoria Pagamento.</p></details><details><summary>Posso cancelar uma participação?</summary><p>Pedidos pendentes podem ser cancelados. Pedidos pagos dependem da análise da equipe: abra um chamado.</p></details><details><summary>Onde vejo as respostas da equipe?</summary><p>Em Meus chamados. Você também recebe uma notificação na sua conta.</p></details></div></section></div>';sPub()}
+function sPub(){var l=TK.map(function(t,i){return '<button class="tl" data-t="'+i+'"><b>#'+t.n+' · '+esc(t.s)+'</b> <span class="pst '+STC[t.st]+'">'+STL[t.st]+'</span><br><small class="mu">'+t.c+' · aberto em '+dt(t.cr)+' · última atualização '+dt(t.u)+'</small></button>'}).join("");
+ $("#pl").innerHTML=l||'<p class="empty" style="margin:0">Você ainda não abriu nenhum chamado.</p>';
+ var t=TK[tcur],p=$("#pt");p.hidden=!t;if(!t)return;
+ p.innerHTML='<h2>#'+t.n+' · '+esc(t.s)+'</h2><p class="mu s" style="margin:4px 0 10px"><span class="pst '+STC[t.st]+'">'+STL[t.st]+'</span> · '+t.c+' · aberto em '+dt(t.cr)+' · atualizado '+dt(t.u)+'</p><div class="thr">'+t.m.filter(function(m){return m.w!=="i"}).map(function(m){return bubT(m,0)}).join("")+'</div><div class="pf" style="margin-top:10px"><textarea id="pr" rows="3" placeholder="'+(t.st==="resolvido"?"Responder (reabre o chamado)":"Sua resposta")+'"></textarea><button class="btn pri" id="pReply">Enviar mensagem</button></div>'}
+$("#v-sup").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+ if(b.dataset.t){tcur=+b.dataset.t;sPub();$("#pt").scrollIntoView({behavior:"smooth"})}
+ else if(b.id==="pSend"){var sj=$("#ps").value.trim(),bd=$("#pb").value.trim();if(sj.length<3||bd.length<10){toast("Assunto (3+) e descrição (10+ caracteres) são obrigatórios.");return}
+  TK.unshift({n:++tn,s:sj,c:$("#pc").value,st:"aberto",cr:Date.now(),u:Date.now(),m:[{w:"u",b:bd,t:Date.now()}]});tcur=0;sSel=sSel>=0?sSel+1:sSel;log("Chamado #"+tn+" aberto");$("#ps").value="";$("#pb").value="";sPub();toast("Chamado aberto. A equipe vai responder aqui.")}
+ else if(b.id==="pReply"){var t=TK[tcur],tx=$("#pr").value.trim();if(!t||!tx)return;t.m.push({w:"u",b:tx,t:Date.now()});t.st=t.st==="aguardando_resposta"?"em_atendimento":t.st==="resolvido"?"aberto":t.st;t.u=Date.now();sPub();toast("Mensagem enviada.")}});
+function sFil(){var q=fq.trim().toLowerCase().replace("#","");return TK.map(function(t,i){return[t,i]}).filter(function(x){var t=x[0];return(!fs||t.st===fs)&&(!fc||t.c===fc)&&(!q||String(t.n)===q||t.s.toLowerCase().indexOf(q)>-1)})}
+function sL(){var l=sFil();$("#sl").innerHTML='<h3>Chamados ('+l.length+')</h3>'+(l.length?l.map(function(x){var t=x[0],i=x[1],pd2=t.st==="aberto"||t.st==="em_atendimento";return '<button class="ti'+(i===sSel?" on":"")+'" data-a="st" data-i="'+i+'">'+(pd2?'<span class="dot" title="Precisa de resposta"></span>':"")+'<b>#'+t.n+' · '+esc(t.s)+'</b><small>Cliente (demonstração) · '+t.c+' · atualizado '+dt(t.u)+'</small><span class="pill p'+STC[t.st]+'" style="margin-top:6px;display:inline-block">'+STL[t.st]+'</span></button>'}).join(""):'<p class="dk">Nenhum chamado'+(TK.length?" neste filtro":"")+'. Abra um na página Suporte do site (menu ☰ → Suporte) e ele aparece aqui.</p>')}
+function sC(){var t=TK[sSel],c=$("#sc");if(!t){c.innerHTML='<h3>Conversa</h3><p class="dk">Selecione um chamado para ver o histórico e responder.</p>';return}
+ c.innerHTML='<h3>#'+t.n+' · '+esc(t.s)+'</h3><p style="margin:0 0 8px;color:#9FB0E8;font-size:13px"><span class="pill p'+STC[t.st]+'">'+STL[t.st]+'</span> · '+t.c+' · aberto em '+dt(t.cr)+' · atualizado '+dt(t.u)+'</p><div class="thr">'+t.m.map(function(m){return bubT(m,1)}).join("")+'</div><div class="f" style="margin-top:10px"><div class="qrs" aria-label="Respostas rápidas">'+QR.map(function(q,i){return '<button type="button" data-a="qr" data-q="'+i+'">'+esc(q.slice(0,34))+'…</button>'}).join("")+'</div><textarea id="sr" rows="3" placeholder="Resposta ao cliente…"></textarea><label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="si" style="width:auto"> Nota interna (só a equipe vê; o cliente não é avisado)</label><button class="a2b" data-a="sSend">Enviar</button></div><div class="f" style="grid-template-columns:1fr auto;margin-top:10px"><select id="sst" aria-label="Status do atendimento">'+opts(Object.keys(STL).map(function(k){return[k,STL[k]]}),t.st)+'</select><button class="a2b" data-a="sSave">Salvar status</button></div>'}
+function tSup(){var c={aberto:0,em_atendimento:0,aguardando_resposta:0,resolvido:0};TK.forEach(function(t){c[t.st]++});
+ $("#dm").innerHTML='<div class="a2k">'+[["Aguardando a equipe",c.aberto+c.em_atendimento,"abertos e em atendimento"],["Em atendimento",c.em_atendimento,"sendo respondidos"],["Aguardando cliente",c.aguardando_resposta,"respondidos pela equipe"],["Resolvidos",c.resolvido,"finalizados"]].map(function(k){return '<div class="a2kc"><span>'+k[0]+'</span><b>'+k[1]+'</b><small>'+k[2]+'</small></div>'}).join("")+'</div><section class="a2c f sf"><input id="sq" placeholder="Buscar por assunto ou número (#1)" aria-label="Buscar" value="'+qa(fq)+'"><select id="sfs" aria-label="Status">'+opts(Object.keys(STL).map(function(k){return[k,STL[k]]}),fs,"Todos os status")+'</select><select id="sfc" aria-label="Categoria">'+opts(CATS,fc,"Todas as categorias")+'</select></section><div class="a2sp"><section class="a2c" id="sl"></section><section class="a2c" id="sc"></section></div>';sL();sC()}
+route();
+</script>
+</body>
+</html>
